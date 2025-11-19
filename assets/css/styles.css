@@ -396,3 +396,26 @@ main section {
     box-shadow: var(--shadow);
     margin: 0 auto;
 }
+
+/* FIX: App Store Button Visibility in Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .app-store-badge {
+        background: var(--surface-soft);
+        border-color: var(--border);
+        color: var(--text);
+        box-shadow: var(--shadow);
+    }
+
+    .app-store-badge.secondary {
+        background: transparent;
+        border-color: var(--border);
+        color: var(--accent);
+    }
+
+    .app-store-badge:hover,
+    .app-store-badge:focus-visible {
+        background: var(--accent-soft);
+        border-color: var(--accent-dark);
+        color: var(--accent-dark);
+    }
+}
