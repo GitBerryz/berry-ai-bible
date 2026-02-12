@@ -358,6 +358,34 @@ main section {
     color: var(--muted);
 }
 
+/* Pricing block (FAQ) – clear typography so prices are unmistakable */
+.pricing-block {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 1.45;
+    max-width: 48ch;
+}
+.pricing-line {
+    margin: 6px 0;
+}
+.pricing-lead {
+    font-weight: 600;
+    color: var(--text);
+}
+.pricing-prices {
+    font-weight: 400;
+    color: var(--text);
+}
+.price-strong {
+    font-weight: 700;
+    color: var(--text);
+}
+.pricing-note {
+    font-weight: 400;
+    color: var(--muted);
+    opacity: 0.9;
+}
+
 /* Responsive layout */
 @media (min-width: 720px) {
     .nav-wrapper {

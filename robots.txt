@@ -1,0 +1,5 @@
+# Berry AI Bible – GitHub Pages
+User-agent: *
+Allow: /
+
+Sitemap: https://gitberryz.github.io/berry-ai-bible/sitemap.xml

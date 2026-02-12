@@ -1,51 +1,108 @@
-# Berry AI Bible Static Site
+# Berry AI Bible
 
-This repository contains the public marketing, support, and privacy policy pages for the Berry AI Bible iOS app. The entire site is static and ready to publish with GitHub Pages.
+**Official website for the Berry AI Bible iOS app** — a minimalist marketing, support, and policy site hosted on GitHub Pages.
 
-## Folder Structure
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?style=flat-square)](https://gitberryz.github.io/berry-ai-bible/)  
+**Live site:** [gitberryz.github.io/berry-ai-bible](https://gitberryz.github.io/berry-ai-bible)
+
+---
+
+## Overview
+
+This repository contains the static, public-facing site for **Berry AI Bible**: an AI-powered scripture companion for iPhone and iPad. The site provides:
+
+- **Home** — App overview, features, FAQ, and App Store download
+- **Support** — Contact info, troubleshooting guides, and bug-report guidance
+- **Privacy** — Full privacy policy and data practices
+
+The site is built with plain HTML and CSS, has no build step, and is optimized for SEO and fast loading.
+
+---
+
+## Tech Stack
+
+| Layer    | Choice              |
+| -------- | ------------------- |
+| Hosting  | GitHub Pages        |
+| Markup   | HTML5               |
+| Styling  | CSS (custom, no framework) |
+| Scripts  | Minimal (e.g. year in footer) |
+
+---
+
+## Project Structure
 
 ```
 berry-ai-bible/
-├── index.html
-├── support.html
-├── privacy.html
-├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   └── img/
-│       ├── app-icon.png
-│       └── screenshots/
-└── README.md
+├── index.html          # Home / marketing
+├── support.html        # Support & troubleshooting
+├── privacy.html        # Privacy policy
+├── robots.txt          # Crawler rules + sitemap reference
+├── sitemap.xml         # SEO sitemap for search engines
+├── README.md
+└── assets/
+    ├── css/
+    │   └── styles.css  # Site-wide styles (light/dark)
+    └── img/
+        ├── app-icon.png
+        └── app-icon-light.png
 ```
 
-- Replace `assets/img/app-icon.png` with your real icon.
-- Add App Store screenshots to `assets/img/screenshots/`.
+---
 
-## GitHub Pages Deployment
+## Deployment (GitHub Pages)
 
-1. Push this folder to your GitHub repository.
-2. In GitHub, open **Settings → Pages**.
-3. Under **Source**, choose the `main` branch.
-4. Select the `/ (root)` folder and save.
+1. Push this repository to GitHub (e.g. `gitberryz/berry-ai-bible`).
+2. Open **Settings → Pages**.
+3. Under **Source**, select the **main** branch.
+4. Choose **/ (root)** as the folder and save.
 
-GitHub Pages URLs once published:
+The site will be available at:
 
-- Marketing URL → `/`
-- Support URL → `/support`
-- Privacy Policy URL → `/privacy`
+- **Home:** `https://<username>.github.io/berry-ai-bible/`
+- **Support:** `https://<username>.github.io/berry-ai-bible/support.html`
+- **Privacy:** `https://<username>.github.io/berry-ai-bible/privacy.html`
 
-## Updating Contact Info
+Redeploys automatically on push to `main`.
 
-- Replace `support@example.com` in `support.html` and `privacy.html` with your active support inbox.
+---
 
-## Adding Screenshots
+## SEO & Discoverability
 
-- Place PNG or JPEG files inside `assets/img/screenshots/`.
-- Update `index.html` when you are ready to showcase them.
+The site is set up so search engines and social platforms can index and preview it correctly:
+
+- **Meta descriptions** on every page
+- **Canonical URLs** to avoid duplicate-content issues
+- **Open Graph** and **Twitter Card** tags for link previews
+- **Structured data** (JSON-LD) for the app on the home page
+- **robots.txt** and **sitemap.xml** for crawlers
+
+No extra tooling is required; all of this is in the HTML and static files.
+
+---
 
 ## Making Updates
 
-1. Edit the HTML or CSS files as needed.
-2. Run `git status` to review changes.
-3. Commit and push to the `main` branch.
-4. GitHub Pages will automatically redeploy within a few minutes.
+1. Edit the relevant `.html` or `assets/css/styles.css` file.
+2. Commit and push to `main`:
+   ```bash
+   git add .
+   git commit -m "Brief description of change"
+   git push origin main
+   ```
+3. GitHub Pages will rebuild and publish within a few minutes.
+
+---
+
+## Links
+
+- **Website:** [gitberryz.github.io/berry-ai-bible](https://gitberryz.github.io/berry-ai-bible)
+- **App Store:** [Berry AI Bible on the App Store](https://apps.apple.com/us/app/berry-ai-bible/id6751311486)
+- **Support email:** [berryaibible@gmail.com](mailto:berryaibible@gmail.com)
+
+---
+
+## License & Copyright
+
+Copyright © 2025 Berry Labs. All rights reserved.  
+This repository is for the Berry AI Bible website only; the app and branding are proprietary.
