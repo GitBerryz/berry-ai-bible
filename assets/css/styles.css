@@ -261,14 +261,6 @@ a:focus-visible {
     margin-top: 2rem;
 }
 
-.hero-banner-image {
-    width: 100%;
-    max-width: 560px;
-    margin: 0 auto;
-    border-radius: 18px;
-    box-shadow: var(--shadow);
-}
-
 /* Main layout */
 main section {
     margin: 3rem 0;
